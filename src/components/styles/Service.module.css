@@ -1,0 +1,31 @@
+.service {
+  width: 320px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links > a {
+  text-decoration: none;
+}
+
+.primaryLink {
+  color: #fff;
+  background-color: var(--color-fg);
+
+  color: var(--color-bg);
+
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.secondaryLink {
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  border: var(--color-fg) 2px solid;
+
+  padding: 8px;
+  border-radius: 8px;
+}

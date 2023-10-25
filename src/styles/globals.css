@@ -1,10 +1,10 @@
 :root {
-  --color-bg: #eee;
-  --color-fg: #000;
+  --color-bg: #ffffff;
+  --color-fg: #12111e;
+  --color-subtext: #1d1c2d;
 
-  --color-s0: #ddd;
-
-  --color-subtext-0: #222;
+  --color-s0: #f0efff;
+  --color-s1: #d7d7d9;
 
   --color-blue: #1565dc;
   --color-green: #2e8453;
@@ -16,12 +16,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #111;
-    --color-fg: #eee;
+    --color-bg: #12111e;
+    --color-fg: #f0efff;
+    --color-subtext: #c1c0d2;
 
-    --color-s0: #222;
-
-    --color-subtext-0: #ccc;
+    --color-s0: #31313e;
+    --color-s1: #272734;
 
     --color-blue: #0555cc;
     --color-green: #65f916;

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import styles from "@/styles/Home.module.css";
 
+import Service from "@/components/Service";
+
 export default function Home() {
   const words = ["technology", "science", "engineering", "design", "business"];
   const colors = ["green", "blue", "red", "pink", "orange", "cyan"];
@@ -42,6 +44,15 @@ export default function Home() {
         <div className={styles.title__subtitle}>
           The Hockinson Math Team applies mathematics to solve real-world
           problems.
+        </div>
+      </div>
+
+      <div className={styles.services}>
+        <h2 className={styles.services__title}>Our works</h2>
+
+        <div className={styles.services__list}>
+          <Service id="archive" />
+          <Service id="latex_template" />
         </div>
       </div>
     </>
