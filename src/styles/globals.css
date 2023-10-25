@@ -5,6 +5,13 @@
   --color-s0: #ddd;
 
   --color-subtext-0: #222;
+
+  --color-blue: #1565dc;
+  --color-green: #2e8453;
+  --color-red: #ea0003;
+  --color-pink: #c21b66;
+  --color-orange: #d33e08;
+  --color-cyan: #1076a5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +22,13 @@
     --color-s0: #222;
 
     --color-subtext-0: #ccc;
+
+    --color-blue: #0555cc;
+    --color-green: #65f916;
+    --color-red: #ff4b4d;
+    --color-pink: #fb71a4;
+    --color-orange: #f79716;
+    --color-cyan: #2ce1eb;
   }
 
   html {
