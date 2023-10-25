@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 import styles from "@/styles/Home.module.css";
 
@@ -7,9 +8,13 @@ import Service from "@/components/Service";
 export default function Home() {
   const words = ["technology", "science", "engineering", "design", "business"];
   const colors = ["green", "blue", "red", "pink", "orange", "cyan"];
+  const max_slideshow = 4;
 
   const [word, setWord] = useState(words[0]);
   const [color, setColor] = useState(colors[0]);
+
+  const [slide, setSlide] = useState(0);
+  const [slideUses, setSlideUses] = useState(0);
 
   useEffect(() => {
     const current_color = color;
@@ -22,6 +27,19 @@ export default function Home() {
       } else {
         setWord(words[index + 1]);
       }
+
+      if (slideUses >= 2) {
+        setSlideUses(0);
+        if (slide === max_slideshow) {
+          setSlide(0);
+        } else {
+          setSlide(slide + 1);
+        }
+      } else {
+        setSlideUses(slideUses + 1);
+      }
+      console.log(slideUses);
+
       setColor(new_colors[Math.floor(Math.random() * new_colors.length)]);
     }, 1500);
     return () => clearInterval(interval);
@@ -29,7 +47,19 @@ export default function Home() {
 
   return (
     <>
-      <div className={styles.title}>
+      <Head>
+        {/* preload all slideshow images */}
+        {[...Array(max_slideshow + 1).keys()].map((i) => (
+          <link
+            key={i}
+            rel="preload"
+            href={`/assets/team/${i}.jpeg`}
+            as="image"
+            type="image/jpeg"
+          />
+        ))}
+      </Head>
+      <div className={`${styles.title} ${styles[`title_img_${slide}`]}`}>
         <div className={styles.title__text}>
           Math is the foundation of{" "}
           <span

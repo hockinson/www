@@ -4,9 +4,19 @@
   flex-direction: column;
   justify-content: center;
 
-  max-width: 900px;
-  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+
+  animation: slideshow 30s ease-in-out infinite;
+
   padding: 24px;
+}
+
+.title__text,
+.title__subtitle {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 0;
 }
 
 .title__text {
@@ -31,6 +41,27 @@
   line-height: 105%;
 
   color: var(--color-subtext);
+}
+
+/* Slideshow */
+.title_img_0 {
+  background-image: url("/assets/team/0.jpeg");
+}
+
+.title_img_1 {
+  background-image: url("/assets/team/1.jpeg");
+}
+
+.title_img_2 {
+  background-image: url("/assets/team/2.jpeg");
+}
+
+.title_img_3 {
+  background-image: url("/assets/team/3.jpeg");
+}
+
+.title_img_4 {
+  background-image: url("/assets/team/4.jpeg");
 }
 
 /* Dynamic word */
