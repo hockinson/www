@@ -2,6 +2,10 @@
   width: 320px;
 }
 
+.service > p {
+  color: var(--color-subtext);
+}
+
 .links {
   display: flex;
   justify-content: space-between;
@@ -28,4 +32,11 @@
 
   padding: 8px;
   border-radius: 8px;
+}
+
+/* For small viewports */
+@media (max-width: 800px) {
+  .service {
+    width: 100%;
+  }
 }

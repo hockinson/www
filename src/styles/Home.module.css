@@ -1,11 +1,12 @@
 .title {
-  height: 80vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   max-width: 900px;
   margin: 0 auto;
+  padding: 24px;
 }
 
 .title__text {
@@ -28,6 +29,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 105%;
+
+  color: var(--color-subtext);
 }
 
 /* Dynamic word */
@@ -61,15 +64,13 @@
 }
 
 .services {
-  margin: 42px;
+  margin: 24px;
 }
 
 .services__title {
   font-size: 2.5em;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 124.138%;
-  margin-bottom: 8px;
+  margin: 0;
+  text-transform: capitalize;
 }
 
 .services__list {
