@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Link from "next/link";
+
+import TeamRocket from "@/images/TeamRocket";
 
 import styles from "./styles/Layout.module.css";
 
@@ -29,6 +32,20 @@ export default function Layout({ children }) {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
+
+      <header className={styles.head}>
+        <Link href="/" className={styles.headLeft}>
+          <div className={styles.logo}>
+            <TeamRocket />
+          </div>
+        </Link>
+
+        <nav className={styles.headRight}>
+          <Link href="/blog">Blog</Link>
+          <Link href="/about">About</Link>
+        </nav>
+      </header>
+
       <main className={styles.main}>{children}</main>
     </>
   );
