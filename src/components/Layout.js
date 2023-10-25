@@ -41,8 +41,7 @@ export default function Layout({ children }) {
         </Link>
 
         <nav className={styles.headRight}>
-          <Link href="/blog">Blog</Link>
-          <Link href="/about">About</Link>
+          <Link href="/archive">Archive</Link>
         </nav>
       </header>
 
