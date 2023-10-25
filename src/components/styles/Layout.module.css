@@ -1,14 +1,15 @@
+/* Header */
 .logo {
   width: 255px;
   display: flex;
 }
 
 .head {
-  margin: 0;
   background-color: var(--color-s0);
+  position: sticky;
+  top: 0;
 
   /* Spacing */
-  padding-left: 12px;
   padding-right: 12px;
 
   /* Evenly space children */
@@ -34,4 +35,23 @@
 .headRight > a:hover {
   color: var(--color-text);
   text-decoration: underline;
+}
+
+/* Body */
+.main {
+  min-height: 100vh;
+
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-s0);
+
+  /* Spacing */
+  padding: 12px;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }

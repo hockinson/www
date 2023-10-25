@@ -2,7 +2,7 @@
   --color-bg: #eee;
   --color-fg: #000;
 
-  --color-s0: #fff;
+  --color-s0: #ddd;
 
   --color-subtext-0: #222;
 }
@@ -12,7 +12,7 @@
     --color-bg: #111;
     --color-fg: #eee;
 
-    --color-s0: #000;
+    --color-s0: #222;
 
     --color-subtext-0: #ccc;
   }

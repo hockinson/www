@@ -47,6 +47,11 @@ export default function Layout({ children }) {
       </header>
 
       <main className={styles.main}>{children}</main>
+
+      <footer className={styles.footer}>
+        <Link href="https://discord.gg/CqpcYPD3h8">Discord</Link>
+        <Link href="https://www.instagram.com/hawkinsonmath/">Instagram</Link>
+      </footer>
     </>
   );
 }
