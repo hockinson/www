@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
-  const words = ["technology", "science", "engineering", "design"];
+  const words = ["technology", "science", "engineering", "design", "business"];
   const colors = ["green", "blue", "red", "pink", "orange", "cyan"];
 
   const [word, setWord] = useState(words[0]);
